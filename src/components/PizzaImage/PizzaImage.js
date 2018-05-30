@@ -1,0 +1,12 @@
+import React from 'react'
+
+import classed from './PizzaImage.css'
+import PizzaImage from '../../assets/pizza.jpg'
+
+const PizzaImage = (props) =>(
+  <div className={classes.PizzaImage}>
+    <img src={PizzaImage} className={classes.PizzaImg} />
+  </div>
+)
+
+export default PizzaImage
