@@ -1,7 +1,7 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 
-module.export = {
+module.exports = {
   // sourceMap
   devtool: 'cheap-module-eval-source-map',
   // entry file
@@ -37,7 +37,7 @@ module.export = {
             options: {
               importLoaders: 1,
               modules: true,
-              localIdentName: '[name]__[local]__[hash: base64:5]',
+              localIdentName: '[name]__[local]__[hash:base64:5]',
             },
           },
           {
@@ -55,8 +55,8 @@ module.export = {
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        loader: 'url-loader?limit=8000&name=images/[name].[ext]'
-      }
+        loader: 'url-loader?limit=8000&name=images/[name].[ext]',
+      },
     ],
   },
 }
