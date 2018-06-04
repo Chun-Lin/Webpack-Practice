@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     // output file name
     filename: 'bundle.js',
+    chunkFilename: '[id].js',
     // Where you uploaded your bundled files. (Relative to server root)
     publicPath: '',
   },
