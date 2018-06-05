@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "rimraf dist && webpack --config webpack.prod.config.js --progress --profile --color"
+    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development --config webpack.config.js",
+    "build": "rimraf dist && webpack --mode production --config webpack.prod.config.js --progress --profile --color"
   },
   "author": "Chun-Lin",
   "license": "ISC",
@@ -25,8 +26,9 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  // sourceMap
+  // // sourceMap
   devtool: 'cheap-module-eval-source-map',
   // entry file
   entry: './src/index.js',
